@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pocono Sew &amp; Vac | Under Construction</title>
+    <meta
+      name="description"
+      content="Pocono Sew & Vac's website is getting a fresh new look. Serving the Poconos since 1979."
+    />
+    <style>
+      :root {
+        --green: #1f3a5f;
+        --green: #b3262e;
+        --cream: #fbf6ea;
+        --ink: #2b2b2b;
+        --gold: #d9a441;
+        --green: #37660a;
+        --lightGreen: #8aa56f;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: var(--lightGreen);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+        text-align: center;
+      }
+      .card {
+        max-width: 640px;
+        width: 100%;
+        background: #fff;
+        border: 3px dashed var(--green);
+        outline: 10px solid #fff;
+        outline-offset: -16px;
+        border-radius: 18px;
+        padding: 48px 32px 40px;
+        box-shadow: 0 14px 40px rgba(31, 58, 95, 0.15);
+      }
+      .brand {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+        letter-spacing: 0.02em;
+        color: var(--green);
+        line-height: 1.1;
+      }
+      .brand span {
+        color: var(--green);
+        font-style: italic;
+      }
+      .tag {
+        margin-top: 8px;
+        font:
+          600 0.85rem/1 Helvetica,
+          Arial,
+          sans-serif;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .icons {
+        margin: 30px auto 10px;
+        width: min(360px, 90%);
+      }
+      .icons svg {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .thread {
+        stroke-dasharray: 6 7;
+      }
+      @keyframes stitch {
+        to {
+          stroke-dashoffset: -26;
+        }
+      }
+      h1 {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+        color: var(--green);
+        margin: 18px 0 12px;
+      }
+      p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        max-width: 46ch;
+        margin: 0 auto 10px;
+      }
+      .badge {
+        display: inline-block;
+        margin-top: 22px;
+        padding: 10px 20px;
+        border-radius: 999px;
+        background: var(--green);
+        color: #fff;
+        font:
+          600 0.9rem/1 Helvetica,
+          Arial,
+          sans-serif;
+        letter-spacing: 0.04em;
+      }
+      .badge a {
+        color: white;
+      }
+      .foot {
+        margin-top: 26px;
+        padding-top: 18px;
+        border-top: 1px solid #eadfc6;
+        font:
+          0.85rem/1.5 Helvetica,
+          Arial,
+          sans-serif;
+        color: #6b6b6b;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .thread {
+          animation: none;
+        }
+      }
+      @media (max-width: 750px) {
+        .brand {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="brand">Pocono <span>Sew</span> &amp; Vac</div>
+      <div class="tag">
+        Sewing &bull; Quilting &bull; Vacuums &bull; Since 1979
+      </div>
+
+      <div class="icons" aria-hidden="true">
+        <svg viewBox="0 0 360 120" xmlns="http://www.w3.org/2000/svg">
+          <!-- spool -->
+          <g transform="translate(40,20)">
+            <rect x="0" y="0" width="60" height="10" rx="3" fill="#8a5a2b" />
+            <rect x="6" y="10" width="48" height="50" fill="#37660a" />
+            <path
+              d="M6 20h48M6 30h48M6 40h48M6 50h48"
+              stroke="#053400"
+              stroke-width="2"
+            />
+            <rect x="0" y="60" width="60" height="10" rx="3" fill="#8a5a2b" />
+          </g>
+          <!-- stitched thread line -->
+          <path
+            class="thread"
+            d="M110 55 H250"
+            stroke="#37660a"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round"
+          />
+          <!-- needle -->
+          <g transform="translate(250,55) rotate(-35)">
+            <rect x="0" y="-2" width="70" height="4" rx="2" fill="#4D4D4D" />
+            <ellipse cx="6" cy="0" rx="3" ry="1.4" fill="#fbf6ea" />
+          </g>
+        </svg>
+      </div>
+
+      <h1>We're Patching Things Up</h1>
+      <p>
+        Our website is currently under construction.<br />Thank you for your
+        patience!
+      </p>
+      <p>
+        Our friendly, knowledgeable team is still here to help with machines,
+        fabric, notions, parts, and repairs.
+      </p>
+
+      <a class="badge" href="tel:8004428227" itemprop="telephone"
+        >Call 800-442-8227</a
+      >
+
+      <br />
+
+      <a class="badge" href="mailto:info@poconosewandvac.com"
+        >Email info@poconosewandvac.com</a
+      >
+
+      <div class="foot">Visit us at 567 Main Street Stroudsburg, PA 18360</div>
+    </main>
+  </body>
+</html>
